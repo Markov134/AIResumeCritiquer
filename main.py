@@ -23,7 +23,7 @@ def extract_text_from_pdf(pdf_file):
     pdf_reader = PyPDF2.PdfReader(pdf_file)
     text = ""
     for page in pdf_reader.pages:
-        text += page.extractText() + "\n"
+        text += page.extract_text() + "\n"
     return text
 
 def extract_text_from_file(uploaded_file):
